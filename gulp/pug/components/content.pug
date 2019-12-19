@@ -1,0 +1,40 @@
+main
+  .my-container
+    .content
+     .content-title
+      h1 Kart balansını artır
+     .content-text
+         ul
+          li Kartın adı
+           a Əmək haqqı kartı
+          li Müqavilə nömrəsi
+            a 00410100107944-156691
+          li Başlama vaxtı
+            a 12.19.2019
+          li Valyuta
+            a AZN
+         .dropdown
+            button#dropdownMenuButton.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              | Ödəniş məlumatları
+            .dropdown-menu(aria-labelledby='dropdownMenuButton')
+              a.dropdown-item(href='#') Ödəniş
+              a.dropdown-item(href='#') Valyuta
+              a.dropdown-item(href='#') Kart balansını artır
+
+
+     .content-select 
+      p Davam etmək üçün məbləğ və valyuta seçin.
+      .content-select-inputs
+        input(type='text' placeholder="Məbləğ")
+        .custom-select(style='width:100%;')
+          select
+            option.val(value='0') Valyuta
+            option(value='1') AZ
+            option(value='2') EN
+            option(value='3') RU
+       
+
+                  
+                  
+
+

@@ -1,0 +1,44 @@
+footer{
+    background-color: $bg-color;
+    .order-panel{
+        display: flex;    
+        padding: 84px 0;
+
+    }
+    .cards-text{
+        margin-left: 40px;
+        h1{
+            color: $green;
+        }
+        p{
+            font-size: 20px;
+            color: #2e384d;
+
+        }
+        button{
+            margin-top: 55px;
+            padding: 20px 45px;
+            border-radius: 6px;
+            background-color: #2e384d;
+            font-size: 16px;
+            color: #ffffff;
+            border: none;
+            outline: none;
+            letter-spacing:0.15px;
+            cursor: pointer;
+            
+        }
+    }
+}
+
+
+@media only screen and (max-width: 721px) {
+
+    .order-panel{
+            flex-direction: column;
+            align-items: center;
+    
+    }
+ }
+ 
+ 

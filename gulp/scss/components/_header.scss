@@ -1,0 +1,141 @@
+.my-container {
+    width: 720px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #bfc5d2;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 0;
+
+        .logo {
+            cursor: pointer;
+        }
+
+        form {
+
+            select {
+                padding: 8px 15px;
+                border-radius: 6px;
+                border: solid 1px #bfc5d2;
+                box-shadow: 0 4px 16px 0 rgba(191, 197, 210, 0.3);
+                font-weight: bold;
+                outline: none;
+                cursor: pointer;
+
+                option {
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+}
+
+.custom-select {
+    position: relative;
+    border-radius: 6px;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    width: 54px;
+    height: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: #2e384d;
+    // border: solid 1px #bfc5d2;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    // border: 6px solid transparent;
+    // background-color: #fff;
+    // border-color: #fff transparent transparent transparent;
+    border: none;
+
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+.select-items div,
+.select-selected {
+    cursor: pointer;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    font-weight: 500;
+    color: #2e384d;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 100%;
+
+    div {
+        padding: 8px 25px;
+        margin-bottom: 5px;
+
+
+    }
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: $green;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 721px) {
+
+    .my-container {
+        width: 100%;
+    }
+
+    nav {
+        padding: 24px 22px !important;
+    }
+
+
+}
