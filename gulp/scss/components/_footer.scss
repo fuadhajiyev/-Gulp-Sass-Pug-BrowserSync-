@@ -41,4 +41,28 @@ footer{
     }
  }
  
+
+@media only screen and (max-width: 500px) {
+
+    .cards{
+            width: 290px;
+            img{
+                width: 100%;
+
+            }
+
+    
+    }
+    .cards-text{
+        
+        margin: 0 !important;
+        h1{
+            font-size: 30px;
+        }
+        button{
+            padding: 15px 35px !important;
+        }
+    }
+ }
+ 
  
